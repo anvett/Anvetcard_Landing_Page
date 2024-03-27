@@ -1,0 +1,97 @@
+@import "../../../styles/variables.scss";
+
+.testimonialContainer {
+  
+  padding: 20px 0;
+  background-color: $accent-color; // Asegúrate de ajustar los colores según tu esquema
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  color: $light-color;
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: $font-primary;
+}
+
+.description {
+  text-align: center;
+  color: $terciary-color;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: $font-secondary;
+}
+
+.testimonialCol {
+  margin-bottom: $spacing-4;
+  display: flex;
+  justify-content: center;
+
+  //     @include media-breakpoint-up(md) {
+  //       margin-bottom: $spacing-5;
+  //     }
+}
+
+.testimonio {
+  background-color: $secondary-color; // Ajusta este color según tu preferencia
+  border-radius: $border-radius-medium; // Asegúrate de que esta variable esté definida en tu archivo de variables SCSS
+  padding: $spacing-4; // Ajusta el padding según necesites
+  margin-bottom: $spacing-4; // Ajusta el margin-bottom según necesites
+  box-shadow: $shadow-md; // Asegúrate de que esta variable esté definida en tu archivo de variables SCSS
+  max-width: 480px; // Ajusta este valor para controlar el ancho de los cuadros de testimonio
+  text-align: left; // Alinea el texto a la izquierda dentro del cuadro de testimonio
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+.imagenAutorWrapper {
+  flex-shrink: 0; // Previene que la imagen se deforme o escale incorrectamente
+  border-radius: 50%;
+  overflow: hidden;
+  width: 90px; // Ajusta según necesites
+  height: 90px; // Mantiene el aspecto cuadrado
+  display: block; // Asegura que la imagen sea tratada como un bloque
+  margin: 0 auto $spacing-5;
+  padding-top: $spacing-2;
+  
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.textWrapper {
+  text-align: center;
+
+  .autor {
+    font-weight: bold;
+    color: $light-color;
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: $font-primary;
+  }
+
+  .cargo {
+    font-style: italic;
+    color: $terciary-color;
+    margin: 0;
+  }
+
+  .textoTestimonio {
+    color: $light-color;
+    margin-top: $spacing-4;
+    font-family: $font-secondary;
+    color: $terciary-color;
+    font-size: 1rem;
+  }
+}

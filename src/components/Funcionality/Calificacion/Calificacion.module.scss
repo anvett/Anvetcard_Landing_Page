@@ -1,0 +1,36 @@
+@import "../../../styles/variables.scss";
+
+.calificacionContainer {
+    text-align: center; // Centra el contenido del contenedor
+    margin-top: 20px; // Espacio en la parte superior
+  }
+  
+  .estrellas {
+    display: inline-block; // Asegura que los botones estén en línea y centrados
+    padding: 10px;
+    border-radius: 5px; // Radio de borde opcional para el contenedor de las estrellas
+    margin-bottom: 10px; // Espacio entre las estrellas y el texto de calificación
+  
+    button {
+      background-color: transparent; // Botones transparentes
+      border: none; // Sin bordes
+      cursor: pointer; // Cursor de mano al pasar por encima
+      font-size: 25px; // Tamaño de las estrellas
+      color: $primary-color; // Color de las estrellas llenas, usa variable de tus estilos
+      margin: 0 2px; // Espaciado entre estrellas
+  
+      &:hover {
+        color: $accent-color; // Color al pasar el mouse, usa variable de tus estilos
+      }
+    }
+  }
+  
+  .llena {
+    color: $accent-color; // Color de estrellas llenas, ajusta según tu esquema de colores
+  }
+  
+  .textoCalificacion {
+    color: $light-color; // Color del texto, usa variable de tus estilos
+    font-family: $font-secondary; // Usa la fuente principal definida en tus variables
+  }
+  

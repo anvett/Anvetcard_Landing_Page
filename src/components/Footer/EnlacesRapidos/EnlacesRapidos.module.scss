@@ -1,0 +1,43 @@
+@import "../../../styles/variables";
+
+.enlacesRapidosContainer {
+  .enlacesRapidos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .titulo {
+    color: $primary-color; // Ajusta según tu esquema de color
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: $font-primary;
+    text-align: center;
+  }
+
+  .listaEnlaces {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: $spacing-2;
+
+      .fastLink {
+        color: $terciary-color;
+        text-decoration: underline;
+        font-size: 1rem;
+        font-family: $font-secondary;
+
+        &:hover {
+          text-decoration: underline;
+          transition: $transition-slow;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

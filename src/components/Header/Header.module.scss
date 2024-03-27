@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+
+.navbar {
+  background-color: $accent-color;
+  padding-bottom: 40px;
+
+  .navBrand {
+    display: flex;
+    color: $light-color;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-3;
+    padding-left: $spacing-5;
+
+    .navTitle {
+      font-size: 1.5rem;
+      font-size: 900;
+      font-family: $font-secondary;
+      &:hover {
+        color: $primary-color;
+        transition: $transition-slow;
+      }
+    }
+
+    .navIcon {
+      height: 50px;
+      width: 50px;
+      &:hover {
+        color: $primary-color;
+        transition: $transition-slow;
+      }
+    }
+  }
+
+  .navLinks {
+    color: $light-color;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: $spacing-5;
+
+    .navLink {
+      color: $light-color;
+      font-size: 1.2rem;
+      font-family: $font-secondary;
+
+      &:hover {
+        text-decoration: underline;
+        color: $primary-color;
+        transition: $transition-slow;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+
+.legalContainer {
+  padding: $spacing-4 0;
+}
+
+.legalContent {
+  text-align: center;
+}
+
+.copyRight {
+  font-size: 1rem;
+  margin-bottom: $spacing-2;
+  color: $light-color;
+  font-family: $font-secondary;
+}
+
+.legalLinks {
+  font-size: 0.8rem;
+
+  .legalLink {
+    color: $light-color;
+    text-decoration: underline;
+    &:hover {
+      color: darken($primary-color, 10%);
+      transition: $transition-slow;
+    }
+  }
+}
+
+.outLink{
+  color: $light-color;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-family: $font-secondary;
+  &:hover {
+    color: darken($primary-color, 10%);
+    transition: $transition-slow;
+  }
+}
+
+

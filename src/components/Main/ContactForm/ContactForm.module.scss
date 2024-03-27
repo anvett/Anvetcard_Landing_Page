@@ -1,0 +1,60 @@
+@import "../../../styles/variables.scss";
+
+.title {
+  text-align: center;
+  color: $light-color;
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: $font-primary;
+}
+
+.description {
+  text-align: center;
+  color: $terciary-color;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: $font-secondary;
+}
+.formContainer {
+  padding: $spacing-4;
+}
+
+.formLabel {
+    color: $primary-color;
+}
+
+.input,
+.textarea {
+  border-radius: $border-radius-medium;
+  border: 1px solid $secondary-color;
+  background-color: $light-color;
+  
+  &:focus {
+    border-color: $primary-color;
+    // Corrección: Eliminamos la referencia a $colors y usamos directamente $primary-color con opacidad
+    box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: $spacing-6;
+}
+
+.submitButton {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  font-family: $font-primary;
+  
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}

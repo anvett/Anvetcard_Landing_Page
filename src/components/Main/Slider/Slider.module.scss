@@ -1,0 +1,35 @@
+@import '../../../styles/variables.scss';
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-color;
+    
+}
+
+.title{
+    color: $dark-color;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.description{
+    color: $secondary-color;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    height: auto;
+    max-height: 600px;
+}

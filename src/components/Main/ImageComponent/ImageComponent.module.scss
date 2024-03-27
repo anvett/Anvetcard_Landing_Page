@@ -1,0 +1,16 @@
+@import '../../../styles/variables.scss';
+
+
+.imageRow {
+    margin: 0; // Elimina el margen por defecto si es necesario
+  }
+  
+  .imageCol {
+    padding: 0; // Elimina el padding por defecto para que la imagen pueda ocupar todo el ancho de la columna
+  }
+  
+  .customImage {
+    border-radius: 8px; // Añade un borde redondeado a la imagen
+    overflow: hidden; // Asegura que el borde redondeado se aplique correctamente
+  }
+  

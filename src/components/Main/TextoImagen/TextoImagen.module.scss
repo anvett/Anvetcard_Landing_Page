@@ -1,0 +1,69 @@
+@import "@/styles/variables";
+
+.textoImagenContainer {
+  margin-bottom: $spacing-6;
+}
+
+.textoImagenCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing-4;
+  background-color: $secondary-color;
+
+  @media (max-width: $breakpoint-md) {
+    align-items: center;
+  }
+}
+
+.titulo {
+  color: $light-color;
+  font-family: $font-primary;
+  margin-bottom: $spacing-3;
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.texto {
+  color: $terciary-color;
+  font-family: $font-secondary;
+  margin-bottom: $spacing-4;
+  text-align: justify;
+  font-size: 1.2rem;
+        font-weight: 400;
+
+  @media (max-width: $breakpoint-md) {
+    text-align: center;
+  }
+}
+
+.imagen {
+  max-width: 100%;
+  height: auto;
+  border-radius: $border-radius-medium;
+  box-shadow: $shadow-md;
+  margin-bottom: $spacing-4;
+}
+
+.estiloImagenButton,
+.estiloImagenButton2 {
+  font-family: $font-primary;
+  color: $secondary-color;
+  background-color: $primary-color;
+  border: none;
+  padding: $spacing-2 $spacing-4;
+  border-radius: $border-radius-small;
+  cursor: pointer;
+  transition: background-color $transition-fast;
+
+  &:hover {
+    background-color: darken($primary-color, 20%);
+  }
+}
+
+// Ajustes específicos para el botón cuando el texto está a la derecha
+.estiloImagenButton2 {
+  // Aquí puedes agregar estilos específicos para el botón cuando el texto está a la derecha
+}

@@ -1,0 +1,42 @@
+
+
+@import "../../styles/variables";
+
+.container {
+  background-color: $accent-color;
+  
+  .components {
+    padding-top: $spacing-4;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap; // Asegúrate de que los elementos pueden envolverse si no hay suficiente espacio
+
+    .modules1, .modules2, .modules3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: $spacing-4; // Agrega un poco de espacio entre los módulos cuando se apilan
+
+      .moduleTitle, p {
+        color: $primary-color;
+        text-align: center; // Centra el texto para mejorar la legibilidad en pantallas pequeñas
+      }
+    }
+  }
+}
+
+// Media queries para ajustes específicos en pantallas pequeñas
+@media (max-width: $breakpoint-sm) {
+  .container .components .modules1,
+  .container .components .modules2,
+  .container .components .modules3 {
+    flex-basis: 100%; // Hace que cada módulo ocupe el ancho completo en pantallas pequeñas
+    justify-content: flex-start; // Ajusta la justificación si es necesario
+    &:not(:first-child) {
+      border-top: 2px solid $light-color; // Ajusta el color y el grosor según tu diseño
+      padding-top: $spacing-4; // Añade espacio sobre el borde para separar visualmente los módulos
+    }
+  }
+}

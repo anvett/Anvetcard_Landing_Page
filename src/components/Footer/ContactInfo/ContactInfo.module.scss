@@ -1,0 +1,84 @@
+@import "../../../styles/variables";
+
+.contactTitle {
+  color: $primary-color; // Ajusta según tu esquema de color
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: $font-primary;
+    text-align: center;
+  
+  
+}
+
+.contactContent {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+  .linkMap{
+    color: $terciary-color;
+    font-size: 1rem;
+    padding-bottom:  $spacing-3;
+    text-align: center;
+    font-family: $font-secondary;
+    &:hover{
+      color: $primary-color;
+      transition: $transition-slow;
+    }
+  }
+}
+
+.phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: $spacing-2;
+    padding-bottom: $spacing-3;
+  li {
+    list-style: square;
+    font-size: 1rem;
+    color: $terciary-color;
+    font-family: $font-secondary;
+  }
+}
+
+.contactItem {
+  font-size: 1rem;
+  color: $terciary-color !important;
+  font-family: $font-secondary;
+}
+
+.accion {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  line-height: 10%;
+
+  .accionItem{
+    font-size: 1rem;
+    font-weight: 900;
+    color: $terciary-color;
+  }
+
+  a {
+    display: inline-block;
+    margin: 0 $spacing-2;
+
+    &:hover {
+      opacity: 0.8;
+      transition: $transition-slow;
+    }
+  }
+
+  .accionImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: $spacing-2;
+    
+  }
+}

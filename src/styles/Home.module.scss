@@ -1,0 +1,143 @@
+@import "../styles/variables";
+
+.main {
+  background-color: $secondary-color;
+}
+
+.heroSection {
+  width: 100%;
+  background-color: $accent-color;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.mainFeatures {
+  width: 100%;
+  background-color: $accent-color;
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  @media (max-width: 490px) {
+    // Ajusta este valor según tus necesidades
+    padding-top: 30px; // Aumenta el padding-top en dispositivos pequeños
+  }
+  @media (max-width: 320px) {
+    // Ajusta este valor según tus necesidades
+    padding-top: 30px; // Aumenta el padding-top en dispositivos pequeños
+  }
+}
+
+.heroVideo {
+  width: 100%;
+  background-color: $secondary-color;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.featuresSection {
+  width: 100%;
+  background-color: $accent-color;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .feature1 {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .feature2 {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+
+.testimonialSection {
+  width: 100%;
+  background-color: $secondary-color;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+//-----------------------------------
+// Pricing
+//-----------------------------------
+
+.pricingSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: $secondary-color;
+  margin-top: $spacing-4;
+  margin-bottom: $spacing-4;
+  padding-bottom: $spacing-5;
+}
+
+.pricingTitle {
+  text-align: center;
+  color: $light-color;
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: $font-primary;
+}
+
+.pricingDescription {
+  text-align: center;
+  color: $terciary-color;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: $font-secondary;
+  width: 80%;
+}
+
+.Promociones {
+  text-align: center;
+  color: $light-color;
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: $font-primary;
+  padding-top: $spacing-8;
+}
+
+
+
+.separator {
+  border-bottom: 2px solid $light-color; // Usa el color secundario para la línea
+  margin: 20px auto; // Margen para separar del título y las características
+  width: 80%; // Controla el ancho de la línea de separación
+}
+
+.faqsSection {
+  width: 100%;
+  background-color: $accent-color;
+  padding-top: 40px;
+  padding-bottom: 80px;
+ 
+}
+
+.contactSection{
+  width: 100%;
+  
+  background-color: $accent-color;
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+}
+
+
+

@@ -1,0 +1,74 @@
+@import "../../../styles/variables.scss";
+
+.pricingCard {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: $border-radius-medium;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin: 1rem auto; // Agrega un margen para separar las tarjetas de precios si están en una grilla o lista
+  text-align: center;
+  height: 100% !important;
+  min-height: 500px !important; // Define una altura mínima para todas las tarjetas
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $light-color;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.pricingBody{
+  height: 100% !important;
+  min-height: 500px !important; // Define una altura mínima para todas las tarjetas
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title, .price, .pricingButton {
+  margin: 0 auto; // Centra los elementos horizontalmente
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $secondary-color;
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: $font-primary;
+}
+
+.separator {
+  border-bottom: 2px solid $secondary-color; // Usa el color secundario para la línea
+  margin: 20px auto; // Margen para separar del título y las características
+  width: 80%; // Controla el ancho de la línea de separación
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $secondary-color;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pricingButton {
+  margin-top: 1rem;
+  background-color: $secondary-color !important;
+  color: $light-color !important;
+}
+
+.itemList{
+  background-color: $light-color;
+  color: $secondary-color;
+  border-radius: 5px;
+}

@@ -1,0 +1,186 @@
+@import "@/styles/variables";
+
+.textoImagenContainer {
+  margin-bottom: $spacing-6;
+}
+
+// .textoImagenCol {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   padding: $spacing-4;
+//   background-color: $accent-color;
+
+//   @media (max-width: $breakpoint-md) {
+//     //align-items: center;
+//     width: 100%;
+//   }
+//}
+
+.izquierdaCol1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing-4;
+  background-color: $secondary-color;
+  width: 80%;
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+  }
+}
+
+.titulo {
+  color: $light-color;
+  font-family: $font-primary;
+  margin-bottom: $spacing-3;
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-left: 1rem !important;
+  text-align: center;
+}
+
+.texto {
+  color: $terciary-color;
+  font-family: $font-secondary;
+  margin-bottom: $spacing-4;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-bottom: $spacing-4;
+  align-items: center;
+  margin-left: 1rem !important;
+  margin-right: 1rem;
+  @media (max-width: $breakpoint-md) {
+    
+  }
+}
+
+
+.caracteristicas{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: $spacing-4;
+  background-color: $secondary-color;
+  width: 100%;
+}
+
+
+.imagen {
+  max-width: 60%;
+  height: auto;
+  border-radius: $border-radius-medium;
+  box-shadow: $shadow-md;
+  margin-bottom: $spacing-4;
+}
+.customList {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin-bottom: $spacing-4;
+  padding-bottom: $spacing-6;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing-2;
+
+    .checkIcon {
+      color: $primary-color; // Ajusta el color según tu esquema de diseño
+      margin-right: $spacing-2; // Espacio entre el ícono y el texto
+      // Aquí puedes ajustar el tamaño del ícono si es necesario, por ejemplo:
+      font-size: 2rem; // Ajusta el tamaño del ícono
+    }
+
+    .listText {
+      color: $light-color; // Cambia esto según tu esquema de color
+      font-size: 1.5rem;
+      font-family: $font-secondary;
+      @media (max-width: $breakpoint-md) {
+        font-size: 1.2rem;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.estiloImagenButton, .estiloImagenButton2
+ {
+  font-family: $font-primary;
+  color: $secondary-color;
+  background-color: $primary-color;
+  border: none;
+  padding: $spacing-2 $spacing-4;
+  border-radius: $border-radius-small;
+  cursor: pointer;
+  transition: background-color $transition-fast;
+
+  &:hover {
+    background-color: darken($primary-color, 20%);
+    color: $accent-color;
+  }
+}
+
+// Ajustes específicos para el botón cuando el texto está a la derecha
+.estiloImagenButton2{
+  background-color: $primary-color;
+}
+
+.features1Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing-4;
+  width: 80%;
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+  }
+}
+
+
+.textoImagenCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing-4;
+  background-color: $secondary-color;
+
+  @media (max-width: $breakpoint-md) {
+    align-items: center;
+  }
+}
+
+.featuresRight{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: $spacing-4;
+  background-color: $secondary-color;
+  width: 100%;
+
+ 
+}
+.subtitulo {
+  
+  color: $light-color; // Cambia esto según tu esquema de color
+  margin-bottom: $spacing-3;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: $font-primary;
+  margin-left: $spacing-4;
+  
+  
+}
+
+.textoDes {
+  
+  color: $terciary-color; // Cambia esto según tu esquema de color
+  font-size: 1.2rem;
+  font-family: $font-secondary;
+  margin-left: $spacing-4 !important;
+
+}
