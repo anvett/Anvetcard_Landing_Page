@@ -32,6 +32,17 @@
   background-color: $secondary-color;
   padding-top: 40px;
   padding-bottom: 80px;
+
+  .videoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: $breakpoint-sm) {
+      padding-bottom: 4rem; // Aumenta el espacio entre el video y el botón
+    }
+  }
 }
 
 .featuresSection {

@@ -43,18 +43,18 @@ export default function Home() {
 
         <section id="About" className={styles.heroVideo}>
           <Row>
-            <Col>
+            <Col className={styles.videoContainer}>
               <HeroVideo
                 title="Conoce a AnvetCard"
                 description="Descubre el poder de AnvetCard y lleva tu red profesional al siguiente nivel."
-                src="/videos/AnvetCard.mp4"
+                src="/videos/video2.mp4"
               />
             </Col>
-            <Col>
+            <Col className={styles.videoContainer}>
               <HeroVideo
                 title="Interación en un clic"
                 description="Fácil de compartir, fácil de usar. Con AnvetCard, tu red profesional está a un clic de distancia."
-                src="/videos/AnvetCard.mp4"
+                src="/videos/anvetcard1.mp4"
               />
             </Col>
           </Row>
@@ -67,7 +67,7 @@ export default function Home() {
                 ladoTexto="izquierda"
                 titulo="Innovación al Alcance de Tu Mano"
                 texto="AnvetCard transforma tu red profesional permitiéndote compartir tu perfil con un clic. Elimina las tarjetas físicas y asegura que tu información siempre esté actualizada y accesible."
-                imageUrl="/images/components/features_left.jpg"
+                imageUrl="/images/components/features_left.png"
                 ctaUrl="Pricing"
                 ctaTexto="Descubre Nuestros Planes"
                 caracteristicas={{
