@@ -2,17 +2,13 @@ import Head from "next/head";
 import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "@/styles/Home.module.scss";
-
 import TextoImagenCTA from "@/components/Main/TextoImagenCTA/TextoImagenCTA";
 import PricingCard from "@/components/Main/PricingCard/PricingCard";
-
 import HeroText from "@/components/Main/HeroText/HeroText";
-import { Main } from "next/document";
 import MainFeatures from "@/components/Main/MainFeatures/MainFeatures";
 import HeroVideo from "@/components/Main/HeroVideo/HeroVideo";
 import Testimonial from "@/components/Main/Testimonial/Testimonial";
 import FaqQuestions from "@/components/Main/FaqQuestions/FaqQuestions";
-import ContactForm from "@/components/Main/ContactForm/ContactForm";
 import GoogleContactForm from "@/components/Main/GoogleContactForm/GoogleContactForm";
 
 export default function Home() {
@@ -129,10 +125,10 @@ export default function Home() {
                 period="Anual"
                 features={[
                   "Foto de perfil",
-                  "Enlaces a redes sociales (hasta 4)",
+                  "Enlaces a redes sociales (hasta 5)",
                   "Iconos de contacto",
                   "Galería o carrusel de imágenes (Hasta 4 imágenes)",
-                  "Video / Código QR / Imagen destacada (2 imágenes)",
+                  "Video y Código QR ó Imagen destacada (3 imágenes)",
                 ]}
                 buttonText="Comprar"
                 buttonAction={() => {
@@ -151,8 +147,8 @@ export default function Home() {
                   "Iconos de contacto",
                   "Galería o carrusel de imágenes (hasta 5 imágenes)",
                   "Componente de educación y certificaciones",
-                  "Componente de experiencia laboral / Servicios",
-                  "Productos destacados / Video / QR Code",
+                  "Componente de experiencia laboral ó Servicios",
+                  "Productos destacados ó Video y QR Code",
                   "Componente de métodos de pago",
                 ]}
                 buttonText="Comprar"
@@ -175,7 +171,7 @@ export default function Home() {
                   "Componente de experiencia laboral",
                   "Componente de Servicios",
                   "Componente de Productos destacados",
-                  "Video (4 videos)",
+                  "Video (3 videos)",
                   "QR Code",
                   "Componente de métodos de pago",
                 ]}
@@ -203,13 +199,7 @@ export default function Home() {
           <FaqQuestions />
         </section>
 
-        {/* <section id="Contacto" className={styles.contactSection}>
-          <Row>
-            <Col>
-              <ContactForm />
-            </Col>
-          </Row>
-        </section> */}
+        
 
         <section id="Contacto" className={styles.contactSection}>
           <Row>

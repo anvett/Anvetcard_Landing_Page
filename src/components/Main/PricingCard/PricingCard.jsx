@@ -1,8 +1,6 @@
 import React from "react";
 import { Card, ListGroup } from "react-bootstrap";
-
 import styles from "./PricingCard.module.scss";
-import Button from "@/components/Button/Button";
 import ButtonSection from "@/components/ButtonSection/ButtonSection";
 
 const PricingCard = ({ planName, price, period, features, buttonText, buttonAction }) => {
