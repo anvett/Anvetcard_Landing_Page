@@ -9,7 +9,7 @@
   }
 
   .titulo {
-    color: $primary-color; // Ajusta según tu esquema de color
+    color: $secondary-color; // Ajusta según tu esquema de color
     margin-bottom: 20px;
     font-size: 1.8rem;
     font-weight: 900;
@@ -25,7 +25,7 @@
       margin-bottom: $spacing-2;
 
       .fastLink {
-        color: $terciary-color;
+        color: $accent-color;
         text-decoration: underline;
         font-size: 1rem;
         font-family: $font-secondary;
@@ -34,7 +34,7 @@
           text-decoration: underline;
           transition: $transition-slow;
           &:hover {
-            color: $primary-color;
+            color: $terciary-color;
           }
         }
       }

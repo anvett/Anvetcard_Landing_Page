@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 
 .contactTitle {
-  color: $primary-color; // Ajusta según tu esquema de color
+  color: $secondary-color; // Ajusta según tu esquema de color
     margin-bottom: 20px;
     font-size: 1.8rem;
     font-weight: 900;
@@ -18,13 +18,13 @@
   flex-direction: column;
 
   .linkMap{
-    color: $terciary-color;
+    color: $accent-color;
     font-size: 1rem;
     padding-bottom:  $spacing-3;
     text-align: center;
     font-family: $font-secondary;
     &:hover{
-      color: $primary-color;
+      color: $terciary-color;
       transition: $transition-slow;
     }
   }
@@ -40,14 +40,14 @@
   li {
     list-style: square;
     font-size: 1rem;
-    color: $terciary-color;
+    color: $accent-color;
     font-family: $font-secondary;
   }
 }
 
 .contactItem {
   font-size: 1rem;
-  color: $terciary-color !important;
+  color: $accent-color !important;
   font-family: $font-secondary;
 }
 
@@ -61,7 +61,7 @@
   .accionItem{
     font-size: 1rem;
     font-weight: 900;
-    color: $terciary-color;
+    color: $accent-color;
   }
 
   a {

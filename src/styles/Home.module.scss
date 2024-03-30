@@ -13,7 +13,7 @@
 
 .mainFeatures {
   width: 100%;
-  background-color: $accent-color;
+  background-color: $secondary-color;
   padding-top: 40px;
   padding-bottom: 80px;
 
@@ -29,8 +29,8 @@
 
 .heroVideo {
   width: 100%;
-  background-color: $secondary-color;
-  padding-top: 40px;
+  background-color: $accent-color;
+  padding-top: 80px;
   padding-bottom: 80px;
 
   .videoContainer {
@@ -47,8 +47,8 @@
 
 .featuresSection {
   width: 100%;
-  background-color: $accent-color;
-  padding-top: 40px;
+  background-color: $secondary-color;
+  padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
   justify-content: center;
@@ -67,8 +67,8 @@
 
 .testimonialSection {
   width: 100%;
-  background-color: $secondary-color;
-  padding-top: 40px;
+  background-color: $light-color;
+  padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
   justify-content: center;
@@ -81,13 +81,15 @@
 //-----------------------------------
 
 .pricingSection {
+  padding-top: 80px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: $secondary-color;
+  background-color: $accent-color;
   margin-top: $spacing-4;
   margin-bottom: $spacing-4;
   padding-bottom: $spacing-5;
@@ -133,10 +135,10 @@
   width: 80%; // Controla el ancho de la línea de separación
 }
 
-.faqsSection {
+.faqSection {
   width: 100%;
-  background-color: $accent-color;
-  padding-top: 40px;
+  background-color: $light-color;
+  padding-top: 80px;
   padding-bottom: 80px;
  
 }
@@ -144,8 +146,8 @@
 .contactSection{
   width: 100%;
   
-  background-color: $accent-color;
-  padding-top: 40px;
+  background-color: $secondary-color;
+  padding-top: 80px;
   padding-bottom: 80px;
 
 }

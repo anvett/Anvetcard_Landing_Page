@@ -3,7 +3,9 @@
 @import "../../styles/variables";
 
 .container {
-  background-color: $accent-color;
+  background-color: $light-color;
+  padding-top: 80px;
+  padding-bottom: 80px;
   
   .components {
     padding-top: $spacing-4;
@@ -20,7 +22,7 @@
       margin-bottom: $spacing-4; // Agrega un poco de espacio entre los módulos cuando se apilan
 
       .moduleTitle, p {
-        color: $primary-color;
+        color: $accent-color;
         text-align: center; // Centra el texto para mejorar la legibilidad en pantallas pequeñas
       }
     }

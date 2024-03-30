@@ -1,12 +1,12 @@
 @import "../../styles/variables";
 
 .navbar {
-  background-color: $accent-color;
+  background-color: $light-color;
   padding-bottom: 40px;
 
   .navBrand {
     display: flex;
-    color: $light-color;
+    color: $secondary-color;
     justify-content: center;
     align-items: center;
     gap: $spacing-3;
@@ -33,14 +33,14 @@
   }
 
   .navLinks {
-    color: $light-color;
+    color: $secondary-color;
     display: flex;
     justify-content: end;
     align-items: center;
     padding-right: $spacing-5;
 
     .navLink {
-      color: $light-color;
+      color: $secondary-color;
       font-size: 1.2rem;
       font-family: $font-secondary;
 

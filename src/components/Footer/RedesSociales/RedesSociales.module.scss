@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 
 .title {
-    color: $primary-color; // Ajusta según tu esquema de color
+    color: $secondary-color; // Ajusta según tu esquema de color
     margin-bottom: 20px;
     font-size: 1.8rem;
     font-weight: 900;
@@ -10,7 +10,7 @@
 }
 
 .text{
-    color: $terciary-color !important; // Ajusta según tu esquema de color
+    color: $accent-color !important; // Ajusta según tu esquema de color
     margin-bottom: 30px;
     font-size: 1.0rem;
     font-weight: 400;
