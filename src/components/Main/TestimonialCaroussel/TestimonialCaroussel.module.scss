@@ -1,0 +1,115 @@
+@import "../../../styles/variables.scss";
+
+.testimonialContainer {
+  padding: 20px 0;
+  background-color: $terciary-color;
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  color: $secondary-color;
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: $font-primary;
+}
+
+.description {
+  color: $accent-color;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: $font-secondary;
+}
+
+.testimonio {
+  background-color: $secondary-color;
+  border-radius: $border-radius-medium;
+  padding: $spacing-4;
+  margin: 0 auto $spacing-4;
+  box-shadow: $shadow-md;
+  max-width: 480px;
+  text-align: left;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // &:hover {
+  //   transform: translateY(-5px);
+  //   box-shadow: $shadow-lg;
+  // }
+}
+
+.imagenAutorWrapper {
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 0 auto $spacing-5;
+  padding-top: $spacing-2;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.textWrapper {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .autor {
+    font-weight: bold;
+    color: $light-color;
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: $font-primary;
+  }
+
+  .cargo {
+    font-style: italic;
+    color: $terciary-color;
+    margin: 0;
+  }
+
+  .textoTestimonio {
+    color: $terciary-color;
+    margin-top: $spacing-4;
+    font-family: $font-secondary;
+    font-size: 1rem;
+  }
+}
+
+.score {
+  // Estilos para la calificación, si es necesario
+  padding-bottom: $spacing-6;
+}
+
+// Personalización de las flechas del carrusel
+.carousel-control-prev, .carousel-control-next {
+  color: $secondary-color !important;
+
+  @media (max-width: 768px) {
+    color: $light-color !important;
+  }
+}
+
+// Personaliza los indicadores/dots del carrusel
+.carousel-indicators li {
+  background-color: $secondary-color;
+}
+
+.carousel-indicators .active {
+  background-color: $accent-color;
+}

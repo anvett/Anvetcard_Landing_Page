@@ -1,15 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
+import { motion } from "framer-motion";
 import styles from "@/styles/Home.module.scss";
 import TextoImagenCTA from "@/components/Main/TextoImagenCTA/TextoImagenCTA";
 import PricingCard from "@/components/Main/PricingCard/PricingCard";
 import HeroText from "@/components/Main/HeroText/HeroText";
 import MainFeatures from "@/components/Main/MainFeatures/MainFeatures";
 import HeroVideo from "@/components/Main/HeroVideo/HeroVideo";
-import Testimonial from "@/components/Main/Testimonial/Testimonial";
+import CardCarousel from "@/components/Main/CardCarousel/CardCarousel";
 import FaqQuestions from "@/components/Main/FaqQuestions/FaqQuestions";
 import GoogleContactForm from "@/components/Main/GoogleContactForm/GoogleContactForm";
+import TestimonialCarousel from "@/components/Main/TestimonialCaroussel/TestimonialCarousel";
+
+
+
 
 export default function Home() {
   return (
@@ -21,20 +26,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <section id="Home" className={styles.heroSection}>
-          <Row>
-            <Col>
-              <HeroText />
-            </Col>
-          </Row>
-        </section>
-
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+          <section id="Home" className={styles.heroSection}>
+            <Row>
+              <Col>
+                <HeroText />
+                
+              </Col>
+            </Row>
+          </section>
+        </motion.div>
         <section className={styles.mainFeatures}>
           <Row>
             <Col>
               <MainFeatures />
             </Col>
           </Row>
+        </section>
+
+        <section id="Modelos" className={styles.modelosSection}>
+          <CardCarousel />
         </section>
 
         <section id="About" className={styles.heroVideo}>
@@ -63,7 +74,7 @@ export default function Home() {
                 ladoTexto="izquierda"
                 titulo="Innovación al Alcance de Tu Mano"
                 texto="AnvetCard transforma tu red profesional permitiéndote compartir tu perfil con un clic. Elimina las tarjetas físicas y asegura que tu información siempre esté actualizada y accesible."
-                imageUrl="/images/components/features_left.png"
+                imageUrl="/images/components/mockup_modelo2.jpg"
                 ctaUrl="Pricing"
                 ctaTexto="Descubre Nuestros Planes"
                 caracteristicas={{
@@ -79,7 +90,7 @@ export default function Home() {
                 ladoTexto="derecha"
                 titulo="Maximiza Tu Impacto"
                 // texto="Explora las ventajas únicas de AnvetCard."
-                imageUrl="/images/components/features_right.jpg"
+                imageUrl="/images/components/mockup_modelo3.jpg"
                 ctaUrl="Contact"
                 ctaTexto="Contáctanos"
                 titulosConDescripcion={[
@@ -105,7 +116,8 @@ export default function Home() {
         </section>
 
         <section id="Testimonios" className={styles.testimonialSection}>
-          <Testimonial />
+          {/* <Testimonial /> */}
+          <TestimonialCarousel />
         </section>
 
         <section id="Pricing" className={styles.pricingSection}>
@@ -198,8 +210,6 @@ export default function Home() {
         <section id="FAQ" className={styles.faqSection}>
           <FaqQuestions />
         </section>
-
-        
 
         <section id="Contacto" className={styles.contactSection}>
           <Row>

@@ -7,24 +7,45 @@
 .heroSection {
   width: 100%;
   background-color: $accent-color;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 80px;
+  height: 100vh;
+
+  .imageSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: $breakpoint-sm) {
+      padding-bottom: 4rem; // Aumenta el espacio entre el video y el botón
+    }
+    
+  }
 }
 
 .mainFeatures {
   width: 100%;
   background-color: $secondary-color;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 80px;
 
   @media (max-width: 490px) {
     // Ajusta este valor según tus necesidades
-    padding-top: 30px; // Aumenta el padding-top en dispositivos pequeños
+    padding-top: 100px; // Aumenta el padding-top en dispositivos pequeños
   }
   @media (max-width: 320px) {
     // Ajusta este valor según tus necesidades
-    padding-top: 30px; // Aumenta el padding-top en dispositivos pequeños
+    padding-top: 100px; // Aumenta el padding-top en dispositivos pequeños
   }
+}
+
+.modelosSection {
+  width: 100%;
+  background-color: $terciary-color;
+  padding-top: 80px;
+  padding-bottom: 80px;
+ 
 }
 
 .heroVideo {
@@ -67,7 +88,7 @@
 
 .testimonialSection {
   width: 100%;
-  background-color: $light-color;
+  background-color: $terciary-color;
   padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
@@ -148,7 +169,7 @@
   
   background-color: $secondary-color;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 90px;
 
 }
 

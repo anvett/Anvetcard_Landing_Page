@@ -95,3 +95,52 @@
     font-size: 1rem;
   }
 }
+
+
+.carousel-control-prev, .carousel-control-next {
+  // Personaliza el color de las flechas para pantallas grandes
+  color: $primary-color !important; // Usa !important para asegurar que sobrescriba los estilos por defecto
+
+  @media (max-width: 768px) {
+    // Cambia el color de las flechas para pantallas pequeñas
+    color: $light-color !important;
+  }
+}
+
+.testimonialContainer .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonio {
+  // Ajustes existentes se mantienen
+  // Asegúrate de que el testimonio esté centrado adecuadamente si es necesario
+  margin: auto;
+  min-height: 300px; // Establece una altura mínima para los testimonios
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// Personaliza los indicadores/dots del carrusel si es necesario
+.carousel-indicators li {
+  background-color: $secondary-color; // Cambia el color de los indicadores
+}
+
+.carousel-indicators .active {
+  background-color: $accent-color; // Cambia el color del indicador activo
+}
+
+.imagenAutorWrapper, .textWrapper, .score {
+  margin: 0 auto; // Centra los elementos horizontalmente
+  text-align: center; // Asegura que el texto esté centrado
+  padding: 0 15px; // Añade un poco de padding para evitar que el texto toque los bordes
+}
+
+.textWrapper {
+  flex-grow: 1; // Permite que el contenedor del texto crezca para llenar el espacio disponible
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // Centra el texto verticalmente dentro del contenedor
+}

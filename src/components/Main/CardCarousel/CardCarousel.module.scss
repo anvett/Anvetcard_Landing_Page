@@ -1,0 +1,185 @@
+@import "../../../styles/variables"; // Ajusta esta importación según tu estructura de proyecto
+
+.carouselContainer {
+  .carouselText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: $spacing-5;
+  }
+  .sectionTitle {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: $secondary-color;
+    text-align: center;
+    font-family: $font-primary;
+    @media (max-width: 520px) {
+      font-size: 2rem;
+      width: 80%;
+    }
+  }
+
+  .sectionDescription {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $accent-color;
+    padding-top: $spacing-5;
+    padding-bottom: $spacing-5;
+    text-align: center;
+    width: 80%;
+    font-family: $font-secondary;
+    text-align: center;
+
+    @media (max-width: 520px) {
+      font-size: 1rem;
+    }
+  }
+
+  .mySwiper {
+    @media (max-width: 520px) {
+        font-size: 2rem;
+        width: 80%;
+      }
+  }
+
+ 
+
+  .swiperSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .slideContent {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .modelTitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $accent-color;
+        padding-top: $spacing-5;
+        padding-bottom: $spacing-5;
+        text-align: center;
+      }
+
+      .slideImage {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        // Estilos adicionales para la imagen
+      }
+
+      .infoButton {
+        font-family: $font-primary;
+        color: $light-color;
+        background-color: $secondary-color;
+        border: none;
+        padding: $spacing-2 $spacing-4;
+        border-radius: $border-radius-small;
+        cursor: pointer;
+        transition: background-color $transition-fast;
+        text-decoration: none;
+
+        &:hover {
+          background-color: darken($terciary-color, 20%);
+          color: $light-color;
+        }
+      }
+
+      .swiper-pagination-bullet {
+        background-color: $terciary-color !important; // Color para los dots no activos
+      }
+      
+      .swiper-pagination-bullet-active {
+        background-color: $secondary-color !important; // Color para el dot activo
+      }
+      
+      // Estilos personalizados para las flechas
+      .swiper-button-next, .swiper-button-prev {
+        &::after {
+          color: $secondary-color !important; // Color para las flechas
+        }
+      }
+    }
+  }
+}
+.ctaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: $spacing-8;
+    padding-bottom: $spacing-5;
+    
+  }
+  .ctaButton {
+    font-family: $font-primary;
+    color: $light-color;
+    background-color: $secondary-color;
+    border: none;
+    padding: $spacing-2 $spacing-4;
+    border-radius: $border-radius-small;
+    cursor: pointer;
+    transition: background-color $transition-fast;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    &:hover {
+      background-color: darken($terciary-color, 20%);
+      color: $light-color;
+    }
+  }
+
+.customModal {
+  .modalHeader {
+    justify-content: center;
+    background-color: $secondary-color;
+  }
+
+  .modalTitle {
+    color: $light-color;
+    text-align: center;
+    width: 100%;
+  }
+
+  .modalBody {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      .featureItem {
+        color: $accent-color;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .modalFooter {
+    justify-content: center;
+
+    .closeButton {
+      font-family: $font-primary;
+      color: $light-color;
+      background-color: $secondary-color;
+      border: none;
+      padding: $spacing-2 $spacing-4;
+      border-radius: $border-radius-small;
+      cursor: pointer;
+      transition: background-color $transition-fast;
+      text-decoration: none;
+
+      &:hover {
+        background-color: darken($terciary-color, 20%);
+        color: $light-color;
+      }
+    }
+
+    
+  }
+}
