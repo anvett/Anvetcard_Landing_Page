@@ -19,19 +19,32 @@ export default function ContactInfo({
       </Row>
       <Row>
         <Col className={styles.contactContent}>
-          <a className={styles.linkMap} href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
-            {address} 
+          <a
+            className={styles.linkMap}
+            href={googleMapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {address}
           </a>
           <ul className={styles.phones}>
             {phoneNumbers.map((phoneNumber, index) => (
-              <li key={index}>{phoneNumber}</li>
+              <li key={index}>
+                <a
+                  href={`tel:${phoneNumber.replace(/\s/g, "")}`} // Quita espacios del número de teléfono si los hay
+                  className={styles.phoneLink}
+                >
+                  {phoneNumber}
+                </a>{" "}
+                
+              </li>
             ))}
           </ul>
           <div className={styles.accion}>
             <p className={styles.accionItem}>¡Contáctanos!</p>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <div className={styles.accionImage}>
-                <Image src="/images/icons/whatsapp_w.png" alt="WhatsApp" width={30} height={30} />
+                <Image src="/images/icons/whatsapp_y.png" alt="WhatsApp" width={40} height={40} />
               </div>
             </a>
           </div>

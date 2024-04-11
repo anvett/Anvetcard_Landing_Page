@@ -20,19 +20,19 @@ const RedesSociales = () => {
       <Row>
         <Col className={styles.socialMedia}>
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/icons/facebook_w.png" alt="Facebook" width={30} height={30} />
+            <Image src="/images/icons/facebook_y.png" alt="Facebook" width={40} height={40} />
           </a>
           {/* <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
             <Image src="/images/xtwitter_b.png" alt="Twitter" width={30} height={30} />
           </a> */}
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/icons/instagram_w.png" alt="Instagram" width={30} height={30} />
+            <Image src="/images/icons/instagram_y.png" alt="Instagram" width={40} height={40} />
           </a>
           <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/icons/youtube_w.jpeg" alt="YouTube" width={30} height={30} />
+            <Image src="/images/icons/youtube_y.png" alt="YouTube" width={40} height={40} />
           </a>
           <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/icons/tiktok_w.png" alt="TikTok" width={30} height={30} />
+            <Image src="/images/icons/tiktok_y.png" alt="TikTok" width={40} height={40} />
           </a>
         </Col>
       </Row>

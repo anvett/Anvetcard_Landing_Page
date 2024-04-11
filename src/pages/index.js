@@ -137,15 +137,12 @@ export default function Home() {
                 period="Anual"
                 features={[
                   "Foto de perfil",
-                  "Enlaces a redes sociales (hasta 5)",
+                  "Enlaces a redes sociales (hasta 4)",
                   "Iconos de contacto",
                   "Galería o carrusel de imágenes (Hasta 4 imágenes)",
-                  "Video y Código QR ó Imagen destacada (3 imágenes)",
+                  "Video ó Código QR e Imagen destacada (Hasta 3 imágenes)",
                 ]}
-                buttonText="Comprar"
-                buttonAction={() => {
-                  alert("Comprando el plan premium");
-                }}
+                
               />
             </Col>
             <Col md={4} sm={12}>
@@ -155,7 +152,7 @@ export default function Home() {
                 period="Anual"
                 features={[
                   "Foto de perfil",
-                  "Enlaces a redes sociales (hasta 6)",
+                  "Enlaces a redes sociales (hasta 5)",
                   "Iconos de contacto",
                   "Galería o carrusel de imágenes (hasta 5 imágenes)",
                   "Componente de educación y certificaciones",
@@ -163,10 +160,7 @@ export default function Home() {
                   "Productos destacados ó Video y QR Code",
                   "Componente de métodos de pago",
                 ]}
-                buttonText="Comprar"
-                buttonAction={() => {
-                  alert("Comprando el plan básico");
-                }}
+               
               />
             </Col>
             <Col md={4} sm={12}>
@@ -183,14 +177,12 @@ export default function Home() {
                   "Componente de experiencia laboral",
                   "Componente de Servicios",
                   "Componente de Productos destacados",
+                  "Componente de Proyectos",
                   "Video (3 videos)",
                   "QR Code",
                   "Componente de métodos de pago",
                 ]}
-                buttonText="Comprar"
-                buttonAction={() => {
-                  alert("Comprando el plan premium");
-                }}
+               
               />
             </Col>
           </Row>

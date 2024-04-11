@@ -1,185 +1,134 @@
+// @import "../../../styles/variables"; // Ajusta esta importación según tu estructura de proyecto
+
+// .carouselContainer {
+//   .mySwiper {
+//     .swiperSlide {
+//       .slideContent {
+//         background-color: $secondary-color;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 3rem;
+//         padding-top: 80px;
+//         padding-bottom: 80px;
+
+//         .imageContainer {
+//         }
+//         .infoContainer {
+//           display: flex;
+//           flex-direction: column;
+//           justify-content: center;
+//           align-items: center;
+
+//           .modelTitle {
+//             font-size: 2.5rem;
+//             font-weight: 900;
+//             color: $light-color;
+//             text-align: center;
+//             font-family: $font-primary;
+//             padding-bottom: $spacing-5;
+//             @media (max-width: 520px) {
+//               font-size: 2rem;
+//             }
+//           }
+//           .caracteristicasFeature {
+//             .featureItem {
+//               font-size: 1.2rem;
+//               font-weight: 400;
+//               color: $accent-color;
+//               padding: $spacing-5;
+              
+//               text-align: center;
+//               width: 100%;
+//               font-family: $font-secondary;
+//               background-color: $light-color;
+//               border-radius: 10px;
+
+
+//               @media (max-width: 520px) {
+//                 font-size: 1rem;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+
 @import "../../../styles/variables"; // Ajusta esta importación según tu estructura de proyecto
 
 .carouselContainer {
-  .carouselText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: $spacing-5;
-  }
-  .sectionTitle {
-    font-size: 2.8rem;
-    font-weight: 900;
-    color: $secondary-color;
-    text-align: center;
-    font-family: $font-primary;
-    @media (max-width: 520px) {
-      font-size: 2rem;
-      width: 80%;
-    }
-  }
-
-  .sectionDescription {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: $accent-color;
-    padding-top: $spacing-5;
-    padding-bottom: $spacing-5;
-    text-align: center;
-    width: 80%;
-    font-family: $font-secondary;
-    text-align: center;
-
-    @media (max-width: 520px) {
-      font-size: 1rem;
-    }
-  }
-
   .mySwiper {
-    @media (max-width: 520px) {
-        font-size: 2rem;
-        width: 80%;
-      }
-  }
+    width: 100%; // Asegura que el swiper ocupe el ancho completo
 
- 
-
-  .swiperSlide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    .slideContent {
-      text-align: center;
+    .swiperSlide {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      text-align: center;
+      width: auto; // Permite que el slide se ajuste al contenido
+      height: auto; // Ajusta la altura basada en el contenido
+      overflow: hidden; // Previene el desbordamiento del contenido
 
-      .modelTitle {
-        font-size: 1.2rem;
-        font-weight: 400;
-        color: $accent-color;
-        padding-top: $spacing-5;
-        padding-bottom: $spacing-5;
-        text-align: center;
-      }
-
-      .slideImage {
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-        // Estilos adicionales para la imagen
-      }
-
-      .infoButton {
-        font-family: $font-primary;
-        color: $light-color;
+      .slideContent {
         background-color: $secondary-color;
-        border: none;
-        padding: $spacing-2 $spacing-4;
-        border-radius: $border-radius-small;
-        cursor: pointer;
-        transition: background-color $transition-fast;
-        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 80px 20px; // Añade un padding horizontal para evitar que el contenido toque los bordes
 
-        &:hover {
-          background-color: darken($terciary-color, 20%);
-          color: $light-color;
+        @media (max-width: 768px) {
+          flex-direction: column; // Cambia a una disposición en columna para pantallas más pequeñas
+          gap: 1rem;
+          padding: 40px 10px; // Reduce el padding en pantallas más pequeñas
+        }
+
+        .imageContainer {
+          // Ajustes para la imagen si son necesarios
+          img {
+            max-width: 100%; // Asegura que la imagen no exceda el ancho del contenedor
+            height: auto; // Mantiene la proporción de la imagen
+          }
+        }
+
+        .infoContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .modelTitle {
+            font-size: 2.5rem;
+            color: $light-color;
+            padding-bottom: $spacing-5;
+
+            @media (max-width: 768px) {
+              font-size: 2rem; // Reduce el tamaño de la fuente para pantallas más pequeñas
+            }
+          }
+
+          .caracteristicasFeature {
+            width: 100%; // Asegura que las características ocupen el ancho completo del contenedor
+
+            .featureItem {
+              font-size: 1.2rem;
+              color: $accent-color;
+              padding: $spacing-5;
+              background-color: $light-color;
+              border-radius: 10px;
+              margin-bottom: $spacing-3; // Añade un margen inferior para separar las características
+
+              @media (max-width: 768px) {
+                font-size: 1rem; // Reduce el tamaño de la fuente para pantallas más pequeñas
+                padding: $spacing-4; // Reduce el padding
+              }
+            }
+          }
         }
       }
-
-      .swiper-pagination-bullet {
-        background-color: $terciary-color !important; // Color para los dots no activos
-      }
-      
-      .swiper-pagination-bullet-active {
-        background-color: $secondary-color !important; // Color para el dot activo
-      }
-      
-      // Estilos personalizados para las flechas
-      .swiper-button-next, .swiper-button-prev {
-        &::after {
-          color: $secondary-color !important; // Color para las flechas
-        }
-      }
     }
-  }
-}
-.ctaContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    padding-top: $spacing-8;
-    padding-bottom: $spacing-5;
-    
-  }
-  .ctaButton {
-    font-family: $font-primary;
-    color: $light-color;
-    background-color: $secondary-color;
-    border: none;
-    padding: $spacing-2 $spacing-4;
-    border-radius: $border-radius-small;
-    cursor: pointer;
-    transition: background-color $transition-fast;
-    text-decoration: none;
-    font-size: 1.2rem;
-
-    &:hover {
-      background-color: darken($terciary-color, 20%);
-      color: $light-color;
-    }
-  }
-
-.customModal {
-  .modalHeader {
-    justify-content: center;
-    background-color: $secondary-color;
-  }
-
-  .modalTitle {
-    color: $light-color;
-    text-align: center;
-    width: 100%;
-  }
-
-  .modalBody {
-    ul {
-      list-style: none;
-      padding: 0;
-
-      .featureItem {
-        color: $accent-color;
-        margin-bottom: 10px;
-      }
-    }
-  }
-
-  .modalFooter {
-    justify-content: center;
-
-    .closeButton {
-      font-family: $font-primary;
-      color: $light-color;
-      background-color: $secondary-color;
-      border: none;
-      padding: $spacing-2 $spacing-4;
-      border-radius: $border-radius-small;
-      cursor: pointer;
-      transition: background-color $transition-fast;
-      text-decoration: none;
-
-      &:hover {
-        background-color: darken($terciary-color, 20%);
-        color: $light-color;
-      }
-    }
-
-    
   }
 }

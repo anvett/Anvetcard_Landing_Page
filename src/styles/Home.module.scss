@@ -1,12 +1,17 @@
 @import "../styles/variables";
 
 .main {
-  background-color: $secondary-color;
+  background-image: url("/images/background2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .heroSection {
   width: 100%;
-  background-color: $accent-color;
+  //background-color: $accent-color;
+  background-image: url("/images/background2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   padding-top: 80px;
   padding-bottom: 80px;
   height: 100vh;
@@ -26,7 +31,10 @@
 
 .mainFeatures {
   width: 100%;
-  background-color: $secondary-color;
+  //background-color: $secondary-color;
+  background-image: url("/images/background2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   padding-top: 80px;
   padding-bottom: 80px;
 
@@ -43,8 +51,12 @@
 .modelosSection {
   width: 100%;
   background-color: $terciary-color;
+  // background-image: url("/images/background3.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
   padding-top: 80px;
   padding-bottom: 80px;
+  
  
 }
 

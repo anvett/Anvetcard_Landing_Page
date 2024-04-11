@@ -64,9 +64,17 @@ const FaqQuestions = () => {
         </Card>
         <Card className={styles.faqCard}>
           <Card.Header className={styles.cardHeader}>
-            <CustomToggle eventKey="5">¿Cómo actualizo la información en mi tarjeta?</CustomToggle>
+            <CustomToggle eventKey="5">¿Cómo puedo adquirir la tarjeta?</CustomToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="5">
+            <Card.Body className={styles.cardBody}>Llena el formulario que está en la parte inferior de la página o contáctanos a nuestro WhatsApp. Te enviamos un formulario para que llenes los datos de acuerdo a tu plan. En 48 horas te enviamos un modelo preliminar para tu aprobación o cambios. Una vez se hayan realizado todos los cambios si los requieres, se publica la tarjeta y te enviamos el link a tu email y WhatsApp.</Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card className={styles.faqCard}>
+          <Card.Header className={styles.cardHeader}>
+            <CustomToggle eventKey="10">¿Cómo actualizo la información en mi tarjeta?</CustomToggle>
+          </Card.Header>
+          <Accordion.Collapse eventKey="10">
             <Card.Body className={styles.cardBody}>Puedes actualizar tu información en cualquier momento enviando un mensaje a nuestro número de atención al cliente que lo encuentras más abajo. Los cambios se reflejan inmediatamente, asegurando que tu red siempre tenga acceso a tus datos más recientes.</Card.Body>
           </Accordion.Collapse>
         </Card>

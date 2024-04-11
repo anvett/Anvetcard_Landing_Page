@@ -2,7 +2,10 @@
 
 .mainFeatureContainer {
   
-  background-color: $secondary-color;
+  //background-color: $secondary-color;
+  background-image: url("/images/background3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 80%;
   padding-top: $spacing-8;
   padding-top: 40px;
