@@ -110,6 +110,14 @@ const FaqQuestions = () => {
             <Card.Body className={styles.cardBody}>Tomamos la seguridad muy en serio. Las tarjetas están alojadas en servidores seguros y tienen certificados SSL. Además, tienes control total sobre qué información compartes y con quién.</Card.Body>
           </Accordion.Collapse>
         </Card>
+        <Card className={styles.faqCard}>
+          <Card.Header className={styles.cardHeader}>
+            <CustomToggle eventKey="11">¿Cuánto tiempo tienen de vigencia las tarjetas?</CustomToggle>
+          </Card.Header>
+          <Accordion.Collapse eventKey="11">
+            <Card.Body className={styles.cardBody}>Las tarjetas tienen un año de vigencia con renovaciones anuales. Por lanzamiento y tiempo limitado, las renovaciones serán gratuitas para nuestros primeros socios.</Card.Body>
+          </Accordion.Collapse>
+        </Card>
         {/* Agrega más preguntas y respuestas según sea necesario */}
       </Accordion>
     </div>

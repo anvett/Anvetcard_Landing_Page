@@ -10,6 +10,11 @@
   padding-top: $spacing-8;
   padding-top: 40px;
   padding-bottom: 80px;
+  @media (max-width: 468px) {
+    //height: 180vh;
+    padding-top: 260px;
+    padding-bottom: 40px;
+  }
 
   .title {
     text-align: center;

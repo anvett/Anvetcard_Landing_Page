@@ -9,8 +9,10 @@
   height: 80vh;
   background-color: transparent;
   padding: $spacing-5;
-  @media (max-width: 520px) {
-    height: 100vh;
+  @media (max-width: 420px) {
+    height: 130vh;
+    padding-top: 60px;
+    padding-bottom: 120px;
   }
 
   .heroTitle {

@@ -1,62 +1,3 @@
-// @import "../../../styles/variables"; // Ajusta esta importación según tu estructura de proyecto
-
-// .carouselContainer {
-//   .mySwiper {
-//     .swiperSlide {
-//       .slideContent {
-//         background-color: $secondary-color;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         gap: 3rem;
-//         padding-top: 80px;
-//         padding-bottom: 80px;
-
-//         .imageContainer {
-//         }
-//         .infoContainer {
-//           display: flex;
-//           flex-direction: column;
-//           justify-content: center;
-//           align-items: center;
-
-//           .modelTitle {
-//             font-size: 2.5rem;
-//             font-weight: 900;
-//             color: $light-color;
-//             text-align: center;
-//             font-family: $font-primary;
-//             padding-bottom: $spacing-5;
-//             @media (max-width: 520px) {
-//               font-size: 2rem;
-//             }
-//           }
-//           .caracteristicasFeature {
-//             .featureItem {
-//               font-size: 1.2rem;
-//               font-weight: 400;
-//               color: $accent-color;
-//               padding: $spacing-5;
-              
-//               text-align: center;
-//               width: 100%;
-//               font-family: $font-secondary;
-//               background-color: $light-color;
-//               border-radius: 10px;
-
-
-//               @media (max-width: 520px) {
-//                 font-size: 1rem;
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-
 @import "../../../styles/variables"; // Ajusta esta importación según tu estructura de proyecto
 
 .carouselContainer {
@@ -72,9 +13,29 @@
       height: auto; // Ajusta la altura basada en el contenido
       overflow: hidden; // Previene el desbordamiento del contenido
 
+      .slideContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .modelTitle {
+        text-align: center;
+        color: $secondary-color;
+        margin-bottom: 30px;
+        font-size: 2.8rem;
+        font-weight: 900;
+        font-family: $font-primary;
+
+        @media (max-width: 768px) {
+          font-size: 2rem; // Reduce el tamaño de la fuente para pantallas más pequeñas
+        }
+      }
+
       .slideContent {
         background-color: $secondary-color;
         display: flex;
+
         justify-content: center;
         align-items: center;
         gap: 3rem;
@@ -100,18 +61,8 @@
           justify-content: center;
           align-items: center;
 
-          .modelTitle {
-            font-size: 2.5rem;
-            color: $light-color;
-            padding-bottom: $spacing-5;
-
-            @media (max-width: 768px) {
-              font-size: 2rem; // Reduce el tamaño de la fuente para pantallas más pequeñas
-            }
-          }
-
           .caracteristicasFeature {
-            width: 100%; // Asegura que las características ocupen el ancho completo del contenedor
+            width: 80%; // Asegura que las características ocupen el ancho completo del contenedor
 
             .featureItem {
               font-size: 1.2rem;

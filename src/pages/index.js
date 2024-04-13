@@ -45,6 +45,7 @@ export default function Home() {
         </section>
 
         <section id="Modelos" className={styles.modelosSection}>
+
           <CardCarousel />
         </section>
 
@@ -133,14 +134,15 @@ export default function Home() {
             <Col md={4} sm={12}>
               <PricingCard
                 planName="Starter"
-                price={40}
-                period="Anual"
+                //price={40}
+                period="40 USD (Oferta de Lanzamiento)"
                 features={[
                   "Foto de perfil",
-                  "Enlaces a redes sociales (hasta 4)",
+                  "Enlaces a redes sociales",
                   "Iconos de contacto",
                   "Galería o carrusel de imágenes (Hasta 4 imágenes)",
-                  "Video ó Código QR e Imagen destacada (Hasta 3 imágenes)",
+                  "Video",
+                  "Código QR",
                 ]}
                 
               />
@@ -148,17 +150,17 @@ export default function Home() {
             <Col md={4} sm={12}>
               <PricingCard
                 planName="Profesional"
-                price={50}
-                period="Anual"
+                //price={50}
+                period="50 USD (Oferta de Lanzamiento)"
                 features={[
                   "Foto de perfil",
-                  "Enlaces a redes sociales (hasta 5)",
+                  "Enlaces a redes sociales ",
                   "Iconos de contacto",
-                  "Galería o carrusel de imágenes (hasta 5 imágenes)",
-                  "Componente de educación y certificaciones",
-                  "Componente de experiencia laboral ó Servicios",
-                  "Productos destacados ó Video y QR Code",
-                  "Componente de métodos de pago",
+                  "Video (Hasta 2 videos)",
+                  "Galería o carrusel de imágenes (hasta 2, con 4 imágenes cada una)",
+                  "3 componentes adicionales (Educación, Experiencia laboral, Servicios, Productos, Proyectos, Información de pago)",
+                  "QR Code",
+                  
                 ]}
                
               />
@@ -166,36 +168,30 @@ export default function Home() {
             <Col md={4} sm={12}>
               <PricingCard
                 planName="Elite"
-                price={60}
-                period="Anual"
+                //price={60}
+                period="60 USD (Oferta de Lanzamiento)"
                 features={[
                   "Foto de perfil",
-                  "Enlaces a redes sociales (Ilimitadas)",
+                  "Enlaces a redes sociales",
                   "Iconos de contacto",
-                  "Galería o carrusel de imágenes (ilimitadas)",
-                  "Componente de educación y certificaciones",
-                  "Componente de experiencia laboral",
-                  "Componente de Servicios",
-                  "Componente de Productos destacados",
-                  "Componente de Proyectos",
-                  "Video (3 videos)",
+                  "Video (Hasta 4 videos)",
+                  "Galería o carrusel de imágenes (Hasta 3, con 6 imágenes cada una)  ",
+                  "5 componentes adicionales (Educación, Experiencia laboral, Servicios, Productos, Proyectos, Información de pago)",
                   "QR Code",
-                  "Componente de métodos de pago",
                 ]}
                
               />
             </Col>
           </Row>
           <div className={styles.separator}></div>
-          <h2 className={styles.Promociones}>Renueva a Mitad de Precio</h2>
-          <h2 className={styles.Promociones}>Oferta Exclusiva para Pioneros Digitales</h2>
+          <h2 className={styles.Promociones}>Renueva Sin Costo</h2>
+          <h2 className={styles.Promociones}>Oferta Exclusiva por Lanzamiento</h2>
           <p className={styles.pricingDescription}>
             En AnvetCard, valoramos a quienes se adelantan al futuro. Por eso, las primeras 100
             personas que se unan a nuestra revolución digital no solo disfrutarán de las ventajas de
-            ser pioneros, sino que también recibirán un 50% de descuento en su renovación. Esta es
+            ser pioneros, sino que también recibirán un 100% de descuento en su renovación. Esta es
             tu oportunidad de mantener tu presencia digital al más alto nivel con una oferta
-            inigualable. Sé rápido, sé uno de los primeros, y asegura tu futuro digital a mitad de
-            precio.
+            inigualable. Sé rápido, sé uno de los primeros, y asegura tu futuro digital.
           </p>
         </section>
 
