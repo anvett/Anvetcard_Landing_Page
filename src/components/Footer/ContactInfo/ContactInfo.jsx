@@ -44,7 +44,7 @@ export default function ContactInfo({
             <p className={styles.accionItem}>¡Contáctanos!</p>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <div className={styles.accionImage}>
-                <Image src="/images/icons/whatsapp_y.png" alt="WhatsApp" width={40} height={40} />
+                <Image src="/images/icons/whatsapp.png" alt="WhatsApp" width={40} height={40} />
               </div>
             </a>
           </div>

@@ -2,13 +2,11 @@
 
 .contactTitle {
   color: $secondary-color; // Ajusta según tu esquema de color
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    font-weight: 900;
-    font-family: $font-primary;
-    text-align: center;
-  
-  
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-family: $font-primary;
+  text-align: center;
 }
 
 .contactContent {
@@ -17,13 +15,13 @@
   align-items: center;
   flex-direction: column;
 
-  .linkMap{
+  .linkMap {
     color: $accent-color;
     font-size: 1rem;
-    padding-bottom:  $spacing-3;
+    padding-bottom: $spacing-3;
     text-align: center;
     font-family: $font-secondary;
-    &:hover{
+    &:hover {
       color: $terciary-color;
       transition: $transition-slow;
     }
@@ -31,17 +29,32 @@
 }
 
 .phones {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: $spacing-2;
-    padding-bottom: $spacing-3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: $spacing-2;
+  padding-bottom: $spacing-3;
   li {
     list-style: square;
     font-size: 1rem;
     color: $accent-color;
     font-family: $font-secondary;
+  }
+
+  .phoneLink {
+    color: $accent-color;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-family: $font-secondary;
+
+    &:hover {
+      text-decoration: underline;
+      transition: $transition-slow;
+      &:hover {
+        color: $terciary-color;
+      }
+    }
   }
 }
 
@@ -58,7 +71,7 @@
   flex-direction: column;
   line-height: 10%;
 
-  .accionItem{
+  .accionItem {
     font-size: 1rem;
     font-weight: 900;
     color: $accent-color;
@@ -74,11 +87,10 @@
     }
   }
 
-  .accionImage{
+  .accionImage {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: $spacing-2;
-    
   }
 }

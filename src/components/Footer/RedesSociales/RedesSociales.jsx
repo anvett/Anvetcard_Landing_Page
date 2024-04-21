@@ -19,20 +19,20 @@ const RedesSociales = () => {
       </Row>
       <Row>
         <Col className={styles.socialMedia}>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/icons/facebook_y.png" alt="Facebook" width={40} height={40} />
+          <a href="https://www.facebook.com/anvetcorp?locale=es_LA" target="_blank" rel="noopener noreferrer">
+            <Image src="/images/icons/facebook.png" alt="Facebook" width={40} height={40} />
           </a>
-          {/* <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/xtwitter_b.png" alt="Twitter" width={30} height={30} />
+          <a href="https://twitter.com/anvetcorp" target="_blank" rel="noopener noreferrer">
+            <Image src="/images//icons/xtwitter.png" alt="Twitter" width={30} height={30} />
+          </a>
+          <a href="https://www.instagram.com/anvetcorp/" target="_blank" rel="noopener noreferrer">
+            <Image src="/images/icons/instagram.png" alt="Instagram" width={40} height={40} />
+          </a>
+          {/* <a href="https://www.youtube.com/channel/UC8LEUAJEqc6y0A9Js9ndiTQ" target="_blank" rel="noopener noreferrer">
+            <Image src="/images/icons/youtube.png" alt="YouTube" width={40} height={40} />
           </a> */}
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/icons/instagram_y.png" alt="Instagram" width={40} height={40} />
-          </a>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/icons/youtube_y.png" alt="YouTube" width={40} height={40} />
-          </a>
-          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/icons/tiktok_y.png" alt="TikTok" width={40} height={40} />
+          <a href="https://www.tiktok.com/@anvetcorpsas" target="_blank" rel="noopener noreferrer">
+            <Image src="/images/icons/tiktok.png" alt="TikTok" width={40} height={40} />
           </a>
         </Col>
       </Row>

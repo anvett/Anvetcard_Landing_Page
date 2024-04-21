@@ -11,23 +11,16 @@
     align-items: center;
     gap: $spacing-3;
     padding-left: $spacing-5;
-
-    .navTitle {
-      font-size: 1.5rem;
-      font-size: 900;
-      font-family: $font-secondary;
-      &:hover {
-        color: $primary-color;
-        transition: $transition-slow;
-      }
+    @media (max-width: 500px) {
+      padding-left: $spacing-2;
     }
 
-    .navIcon {
-      height: 50px;
-      width: 50px;
-      &:hover {
-        color: $primary-color;
-        transition: $transition-slow;
+    .navLogo{
+      border-radius: 5px;
+      @media (max-width: 500px) {
+        width: 120px;
+        height: 35px;
+        
       }
     }
   }
